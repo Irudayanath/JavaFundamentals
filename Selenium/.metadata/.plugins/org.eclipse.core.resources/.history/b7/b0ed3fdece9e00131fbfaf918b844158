@@ -1,0 +1,9 @@
+package ObserverPattern;
+
+public class Registerwindow {
+
+	public Registerwindow() {
+		System.out.println("Hello");
+	}
+
+}

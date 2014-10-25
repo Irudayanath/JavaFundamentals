@@ -1,0 +1,22 @@
+package Default;
+
+import java.util.Stack;
+
+public class Rever {
+public static void main(String args[])
+{
+	String s="welcome to world";
+	Stack s1=new Stack();
+	for(int i=0;i<s.length();i++)
+	{
+		char c=s.charAt(i);
+		s1.push(c);
+		System.out.print(c);
+		while(!s1.empty())
+		{
+			char co=(Character) s1.pop();
+			System.out.print(co);
+		}
+	}
+}
+}

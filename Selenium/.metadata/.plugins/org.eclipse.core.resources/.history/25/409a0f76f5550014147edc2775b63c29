@@ -1,0 +1,9 @@
+package cross;
+
+import org.testng.annotations.Test;
+
+public class crossbro {
+  @Test
+  public void f() {
+  }
+}

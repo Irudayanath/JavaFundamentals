@@ -1,0 +1,22 @@
+package De;
+
+
+
+import java.io.File;
+import java.io.IOException;
+
+import jxl.*;
+import jxl.read.biff.BiffException;
+public class jxlplugin {
+
+	
+
+public static void main(String args[]) throws BiffException, IOException
+{
+	  Workbook wb=Workbook.getWorkbook(new File("C:/Users/admin/Desktop/input.xls"));
+	  Sheet sheet=wb.getSheet("Sheet1");
+	  String getSheetdata=sheet.getCell(0,0).getContents();
+	  System.out.println(getSheetdata);
+	  wb.close();
+  }
+}

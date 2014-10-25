@@ -1,0 +1,32 @@
+package ObserverPattern;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public abstract class NetworkKeyAssign implements ActionListener{
+	JButton b1=new JButton("Join Network");
+}
+public static void main(String args[])
+{
+	
+
+int privatekey;
+int publickey;
+
+JFrame f=new JFrame();
+f.setVisible(true);
+f.setSize(400,600);
+
+@Override
+public void actionPerformed(ActionEvent e) {
+	
+	if(e.getSource()==b1)
+	{
+		new Registerwindow();
+	}
+}
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>H:\Charles\TestNG\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Browser.Chrome" hash-for-method="f(FireFox)">f(FireFox)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Browser.Chrome" hash-for-method="f(Chrome)">f(Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Browser.Chrome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(FireFox)">
+                  </a> <!-- f(FireFox) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(FireFox)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ddons&quot;:{&quot;wrc@avast.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;mtime&quot;:1411625291506,&quot;rdfTime&quot;:1411625287933}}},{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411646779820,&quot;rdfTime&quot;:1411646778399}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous4187webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1414179807837,&quot;rdfTime&quot;:1414179805128}}}]
+1414179817447	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous4187webdriver-profile\extensions.json
+1414179817453	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1414179818040	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1414179818042	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818043	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818043	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1414179818060	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1414179818060	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818060	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818060	addons.xpi	DEBUG	New add-on wrc@avast.com installed in winreg-app-global
+1414179818317	addons.xpi-utils	DEBUG	Make addon winreg-app-global:wrc@avast.com visible
+1414179818318	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818318	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818510	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1414179818510	addons.xpi-utils	DEBUG	Updating add-on states
+1414179818512	addons.xpi-utils	DEBUG	Writing add-ons list
+1414179822362	DeferredSave.extensions.json	DEBUG	Starting timer
+1414179822608	DeferredSave.extensions.json	DEBUG	Starting write
+1414179822756	addons.manager	DEBUG	shutdown
+1414179822892	addons.xpi	DEBUG	shutdown
+1414179822893	addons.xpi-utils	DEBUG	shutdown
+1414179823107	DeferredSave.extensions.json	DEBUG	Write succeeded
+1414179823108	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1414179823108	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1414179823117	addons.manager	DEBUG	Async provider shutdown done
+1414179828721	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1414179828725	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1414179828735	addons.xpi	DEBUG	startup
+1414179828736	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
+1414179828738	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1414179828738	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1414179828750	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1414179828755	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\admin\AppData\Local\Temp\anonymous4187webdriver-profile\extensions\fxdriver@googlecode.com
+1414179828756	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous4187webdriver-profile\extensions\webdriver-staging
+1414179828756	addons.xpi	DEBUG	checkForChanges
+1414179829036	addons.xpi	DEBUG	No changes found
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+1414179867838	addons.manager	DEBUG	shutdown
+1414179867844	addons.xpi	DEBUG	shutdown
+1414179867844	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1414179867855	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
+System info: os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_04&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at Browser.Chrome.f(Chrome.java:22)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ddons&quot;:{&quot;wrc@avast.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;mtime&quot;:1411625291506,&quot;rdfTime&quot;:1411625287933}}},{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411646779820,&quot;rdfTime&quot;:1411646778399}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous4187webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1414179807837,&quot;rdfTime&quot;:1414179805128}}}]
+1414179817447	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous4187webdriver-profile\extensions.json
+1414179817453	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1414179818040	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1414179818042	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818043	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818043	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1414179818060	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1414179818060	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818060	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818060	addons.xpi	DEBUG	New add-on wrc@avast.com installed in winreg-app-global
+1414179818317	addons.xpi-utils	DEBUG	Make addon winreg-app-global:wrc@avast.com visible
+1414179818318	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818318	DeferredSave.extensions.json	DEBUG	Save changes
+1414179818510	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1414179818510	addons.xpi-utils	DEBUG	Updating add-on states
+1414179818512	addons.xpi-utils	DEBUG	Writing add-ons list
+1414179822362	DeferredSave.extensions.json	DEBUG	Starting timer
+1414179822608	DeferredSave.extensions.json	DEBUG	Starting write
+1414179822756	addons.manager	DEBUG	shutdown
+1414179822892	addons.xpi	DEBUG	shutdown
+1414179822893	addons.xpi-utils	DEBUG	shutdown
+1414179823107	DeferredSave.extensions.json	DEBUG	Write succeeded
+1414179823108	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1414179823108	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1414179823117	addons.manager	DEBUG	Async provider shutdown done
+1414179828721	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1414179828725	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1414179828735	addons.xpi	DEBUG	startup
+1414179828736	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
+1414179828738	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1414179828738	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1414179828750	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1414179828755	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\admin\AppData\Local\Temp\anonymous4187webdriver-profile\extensions\fxdriver@googlecode.com
+1414179828756	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous4187webdriver-profile\extensions\webdriver-staging
+1414179828756	addons.xpi	DEBUG	checkForChanges
+1414179829036	addons.xpi	DEBUG	No changes found
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+1414179867838	addons.manager	DEBUG	shutdown
+1414179867844	addons.xpi	DEBUG	shutdown
+1414179867844	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1414179867855	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	... 28 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Browser.Chrome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(Chrome)">
+                  </a> <!-- f(Chrome) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">H:\Charles\TestNG\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Browser.Chrome&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test name=&quot;FireFoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FireFox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Browser.Chrome&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FireFoxTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FireFoxTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'f')
+data.setCell(0, 2, 'Browser.Chrome')
+data.setCell(0, 3, 81505);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'f')
+data.setCell(1, 2, 'Browser.Chrome')
+data.setCell(1, 3, 49620);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Browser.Chrome</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">f(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f(FireFox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

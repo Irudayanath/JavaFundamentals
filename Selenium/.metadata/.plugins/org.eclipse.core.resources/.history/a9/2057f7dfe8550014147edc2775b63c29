@@ -1,0 +1,39 @@
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class SelectAlllinks {
+public static void main(String args[])
+{
+	WebDriver driver;
+
+	driver=new FirefoxDriver();
+	driver.get("http://www.vasanthandco.co/");
+	String s="UnderConstruction";
+	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+	List<WebElement> linkElements=driver.findElements(By.tagName("a"));
+	String[] linktexts=new String[linkElements.size()];
+	int i=0;
+	//Extract LinkText
+	for(WebElement e:linkElements)
+	{
+		linktexts[i]=e.getText();
+	}
+	//Test Each Link
+	for(String t:linktexts)
+	{
+		driver.findElement(By.linkText(t)).click();
+		if(driver.getTitle().equals(s))
+		{
+		System.out.println("Link Dead");
+		}
+		else
+		System.out.println("LinkActiver");
+	}
+}
+}
