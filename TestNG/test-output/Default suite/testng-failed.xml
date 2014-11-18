@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Browser.Chrome">
+      <class name="Browser.Browser.ScreenTest">
         <methods>
-          <include name="f"/>
+          <include name="f" invocation-numbers="1"/>
         </methods>
-      </class> <!-- Browser.Chrome -->
+      </class> <!-- Browser.Browser.ScreenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

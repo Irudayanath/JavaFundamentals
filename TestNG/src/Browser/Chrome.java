@@ -1,6 +1,8 @@
 package Browser;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
@@ -16,6 +18,8 @@ public class Chrome {
 		  System.setProperty("webdriver.chrome.driver","c:/Selenium/chromedriver.exe");
 		  driver=new ChromeDriver();
 		  driver.get("http://www.google.com");
+		  
+
 	  }
 	  else if(browser.equalsIgnoreCase("FireFox"))
 	  {

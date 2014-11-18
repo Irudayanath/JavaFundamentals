@@ -18,6 +18,7 @@ public class TestModule1 {
 		fdriver.get("https://www.gmail.com");
 	    fdriver.getTitle();
 	  
+	    
 		fdriver.close();
 		
 		fdriver.getCurrentUrl();
@@ -43,6 +44,21 @@ driverwait.until(ExpectedConditions.alertIsPresent());
 driverwait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
 driverwait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("ViewFrame"));
 driverwait.until(ExpectedConditions.elementToBeSelected(By.linkText("Register")));
+WebDriverWait driverwait=new WebDriverWait(driver,10);
+driverwait.until(ExpectedCondtions.visibilityofElementLocated(By.id("hi")));
+
+WebDriverWait driverWiat=new WebDriverWait(driver,10);
+driverwait.until(ExpectedCondtions.visibilitofElementLocated(By.xpath("")));
+
+fdriver.switchTo().alert().accept();
+
+Select select=new Select(driver.findElement(By.xpat()));
+select.selectByIndex(1);
+select.deselectByIndex(4);
+select.selectByVisibleText("antaartica");
+select.isMultiple();
+select.deselectAll();
+
 
 
 Select newselect=new Select(fdriver.findElement(By.id("name")));
@@ -65,6 +81,8 @@ fdriver.findElement(By.xpath("//div[1]/img"));
 WebElement e=fdriver.findElement(By.id("we"));
 Actions action=new Actions(fdriver);
 Actions mousemoveover=action.click();
+
+
 action.moveToElement(e);
 action.sendKeys(e,"hello");
 action.doubleClick(e);

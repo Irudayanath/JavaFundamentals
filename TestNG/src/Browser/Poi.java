@@ -13,6 +13,14 @@ w=Workbook.getWorkbook(f);
 Sheet sh=w.getSheet("Sheet1");
 sh.getCell(0,1);
 
+Workbook w1=Workbook.getWorkbook(f);
+
+Sheet s=w1.getSheet("sheet1");
+s.getCell(0, 1).getContents();
+Workbook.close();
+
 
 }
+
+
 }

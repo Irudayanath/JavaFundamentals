@@ -7,7 +7,7 @@ public class New {
 public static void main(String args[])
 {
 	WebDriver driver=new FirefoxDriver();
-	driver.get("www.google.com");
+	driver.get("http://www.google.com");
 		
 }
 }
