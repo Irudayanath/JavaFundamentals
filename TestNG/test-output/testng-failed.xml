@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="tests">
-  <parameter name="Browser" value="FireFox"/>
-  <test name="FireFox(failed)" parallel="tests">
-    <parameter name="Browser" value="FireFox"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Browser.Browser.ScreenTest">
+      <class name="CheckBox">
         <methods>
-          <include name="f" invocation-numbers="0"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- Browser.Browser.ScreenTest -->
+      </class> <!-- CheckBox -->
     </classes>
-  </test> <!-- FireFox(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="tests">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
   <parameter name="Browser" value="FireFox"/>
-  <test name="FireFox(failed)" parallel="tests">
+  <test name="FireTest(failed)" parallel="tests">
     <parameter name="Browser" value="FireFox"/>
     <classes>
-      <class name="Browser.Browser.ScreenTest">
+      <class name="Browser.CrossBrowser">
         <methods>
-          <include name="f" invocation-numbers="0"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- Browser.Browser.ScreenTest -->
+      </class> <!-- Browser.CrossBrowser -->
     </classes>
-  </test> <!-- FireFox(failed) -->
+  </test> <!-- FireTest(failed) -->
+  <test name="CrossTest(failed)" parallel="tests">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Browser.CrossBrowser">
+        <methods>
+          <include name="Test"/>
+        </methods>
+      </class> <!-- Browser.CrossBrowser -->
+    </classes>
+  </test> <!-- CrossTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

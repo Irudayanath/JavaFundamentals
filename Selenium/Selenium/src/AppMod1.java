@@ -29,7 +29,15 @@ public class AppMod1 {
 		action.moveToElement(drop).build().perform();
 		action.release(drop).build().perform();
 		
+		driver.findElement(By.xpath("").cssValue("font-size'")));
+		driver.findElement(By.xpath("").cssvalue("font-color"));
 		
+		set<String> allwindows=driver.getWindowHandles();
+		for(String windows:allwindow)
+		{
+			driver.switchTo().window(allwindow);
+			driver.switchTo().window(allwindow);
+		}
 	}
 
 }

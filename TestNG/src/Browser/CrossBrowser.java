@@ -28,7 +28,27 @@ public class CrossBrowser {
 	  
   }
 
+@Parameters("browser")
+public void browser(String browser)
+{
+	if(browser.equalsIgnoreCase("chrome"))
+}
 
+@Test(dataProvider="search")
+public void Test1(String name,String age)
+{
+	
+}
+
+@DataProvider(name="parmetername")
+public Object[][] dp()
+{
+	return new Object[][]
+			{
+			{"chr","gtt"},
+			{"ght","ggth"}
+			};
+}
 @Test(dataProvider="Search")
 
 public void Test(String name,String Age)
@@ -62,6 +82,14 @@ public Object[][] getDatafromDataProvider()
 			
 			};
 }
-
+@DataProvider(name="Search")
+public Object[][] searchdp()
+{
+	return new Object[][]
+			{
+			{"gghh","ggh"},
+			{"gtht","gthy"}
+			};
+}
 }
 

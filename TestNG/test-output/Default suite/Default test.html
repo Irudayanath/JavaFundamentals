@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 18 16:12:04 IST 2014</td>
+<td>Started on:</td><td>Thu Jan 22 23:53:22 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>117 seconds (117250 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66577 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,65 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Browser.Browser.ScreenTest.f()'><b>f</b><br>Test class: Browser.Browser.ScreenTest<br>Parameters: FireFox</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
-ime&quot;:1411625291506,&quot;rdfTime&quot;:1411625287933}}},{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411646779820,&quot;rdfTime&quot;:1411646778399}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous27677webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1416307380282,&quot;rdfTime&quot;:1416307378776}}}]
-1416307389842	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions.json
-1416307389846	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-1416307390491	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
-1416307390494	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390495	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390496	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-1416307390511	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390512	addons.xpi	DEBUG	New add-on wrc@avast.com installed in winreg-app-global
-1416307390826	addons.xpi-utils	DEBUG	Make addon winreg-app-global:wrc@avast.com visible
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307391045	addons.xpi	DEBUG	Updating database with changes to installed add-ons
-1416307391045	addons.xpi-utils	DEBUG	Updating add-on states
-1416307391047	addons.xpi-utils	DEBUG	Writing add-ons list
-1416307395094	DeferredSave.extensions.json	DEBUG	Starting timer
-1416307395139	DeferredSave.extensions.json	DEBUG	Starting write
-1416307395306	addons.manager	DEBUG	shutdown
-1416307395443	addons.xpi	DEBUG	shutdown
-1416307395443	addons.xpi-utils	DEBUG	shutdown
-1416307395574	DeferredSave.extensions.json	DEBUG	Write succeeded
-1416307395574	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
-1416307395574	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307395584	addons.manager	DEBUG	Async provider shutdown done
-1416307397304	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
-1416307397308	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
-1416307397311	addons.xpi	DEBUG	startup
-1416307397312	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
-1416307397313	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
-1416307397314	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
-1416307397316	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
-1416307397319	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\fxdriver@googlecode.com
-1416307397320	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\webdriver-staging
-1416307397320	addons.xpi	DEBUG	checkForChanges
-1416307397588	addons.xpi	DEBUG	No changes found
-*** Blocklist::_preloadBlocklistFile: blocklist is disabled
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-1416307419620	addons.manager	DEBUG	shutdown
-1416307419626	addons.xpi	DEBUG	shutdown
-1416307419627	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307419684	addons.manager	DEBUG	Async provider shutdown done
-
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
-System info: os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_04&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at Browser.Browser.ScreenTest.f(ScreenTest.java:22)
+<td title='CheckBox.Test()'><b>Test</b><br>Test class: CheckBox</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:323)
+	at CheckBox.Test(CheckBox.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -158,114 +103,10 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
-ime&quot;:1411625291506,&quot;rdfTime&quot;:1411625287933}}},{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411646779820,&quot;rdfTime&quot;:1411646778399}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous27677webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1416307380282,&quot;rdfTime&quot;:1416307378776}}}]
-1416307389842	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions.json
-1416307389846	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-1416307390491	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
-1416307390494	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390495	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390496	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-1416307390511	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390512	addons.xpi	DEBUG	New add-on wrc@avast.com installed in winreg-app-global
-1416307390826	addons.xpi-utils	DEBUG	Make addon winreg-app-global:wrc@avast.com visible
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307391045	addons.xpi	DEBUG	Updating database with changes to installed add-ons
-1416307391045	addons.xpi-utils	DEBUG	Updating add-on states
-1416307391047	addons.xpi-utils	DEBUG	Writing add-ons list
-1416307395094	DeferredSave.extensions.json	DEBUG	Starting timer
-1416307395139	DeferredSave.extensions.json	DEBUG	Starting write
-1416307395306	addons.manager	DEBUG	shutdown
-1416307395443	addons.xpi	DEBUG	shutdown
-1416307395443	addons.xpi-utils	DEBUG	shutdown
-1416307395574	DeferredSave.extensions.json	DEBUG	Write succeeded
-1416307395574	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
-1416307395574	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307395584	addons.manager	DEBUG	Async provider shutdown done
-1416307397304	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
-1416307397308	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
-1416307397311	addons.xpi	DEBUG	startup
-1416307397312	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
-1416307397313	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
-1416307397314	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
-1416307397316	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
-1416307397319	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\fxdriver@googlecode.com
-1416307397320	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\webdriver-staging
-1416307397320	addons.xpi	DEBUG	checkForChanges
-1416307397588	addons.xpi	DEBUG	No changes found
-*** Blocklist::_preloadBlocklistFile: blocklist is disabled
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-1416307419620	addons.manager	DEBUG	shutdown
-1416307419626	addons.xpi	DEBUG	shutdown
-1416307419627	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307419684	addons.manager	DEBUG	Async provider shutdown done
-
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
-	... 31 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace534353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace534353'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
-ime&quot;:1411625291506,&quot;rdfTime&quot;:1411625287933}}},{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411646779820,&quot;rdfTime&quot;:1411646778399}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous27677webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1416307380282,&quot;rdfTime&quot;:1416307378776}}}]
-1416307389842	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions.json
-1416307389846	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-1416307390491	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
-1416307390494	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390495	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390496	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-1416307390511	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390512	addons.xpi	DEBUG	New add-on wrc@avast.com installed in winreg-app-global
-1416307390826	addons.xpi-utils	DEBUG	Make addon winreg-app-global:wrc@avast.com visible
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307391045	addons.xpi	DEBUG	Updating database with changes to installed add-ons
-1416307391045	addons.xpi-utils	DEBUG	Updating add-on states
-1416307391047	addons.xpi-utils	DEBUG	Writing add-ons list
-1416307395094	DeferredSave.extensions.json	DEBUG	Starting timer
-1416307395139	DeferredSave.extensions.json	DEBUG	Starting write
-1416307395306	addons.manager	DEBUG	shutdown
-1416307395443	addons.xpi	DEBUG	shutdown
-1416307395443	addons.xpi-utils	DEBUG	shutdown
-1416307395574	DeferredSave.extensions.json	DEBUG	Write succeeded
-1416307395574	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
-1416307395574	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307395584	addons.manager	DEBUG	Async provider shutdown done
-1416307397304	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
-1416307397308	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
-1416307397311	addons.xpi	DEBUG	startup
-1416307397312	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
-1416307397313	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
-1416307397314	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
-1416307397316	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
-1416307397319	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\fxdriver@googlecode.com
-1416307397320	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\webdriver-staging
-1416307397320	addons.xpi	DEBUG	checkForChanges
-1416307397588	addons.xpi	DEBUG	No changes found
-*** Blocklist::_preloadBlocklistFile: blocklist is disabled
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-1416307419620	addons.manager	DEBUG	shutdown
-1416307419626	addons.xpi	DEBUG	shutdown
-1416307419627	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307419684	addons.manager	DEBUG	Async provider shutdown done
-
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
-System info: os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_04&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
-	at Browser.Browser.ScreenTest.f(ScreenTest.java:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace3840954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3840954'><pre>java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:323)
+	at CheckBox.Test(CheckBox.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -290,71 +131,9 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
-ime&quot;:1411625291506,&quot;rdfTime&quot;:1411625287933}}},{&quot;name&quot;:&quot;app-global&quot;,&quot;addons&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;descriptor&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;mtime&quot;:1411646779820,&quot;rdfTime&quot;:1411646778399}}},{&quot;name&quot;:&quot;app-profile&quot;,&quot;addons&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\admin\\AppData\\Local\\Temp\\anonymous27677webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1416307380282,&quot;rdfTime&quot;:1416307378776}}}]
-1416307389842	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions.json
-1416307389846	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-1416307390491	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
-1416307390494	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390495	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390496	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-1416307390511	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390511	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390512	addons.xpi	DEBUG	New add-on wrc@avast.com installed in winreg-app-global
-1416307390826	addons.xpi-utils	DEBUG	Make addon winreg-app-global:wrc@avast.com visible
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307390827	DeferredSave.extensions.json	DEBUG	Save changes
-1416307391045	addons.xpi	DEBUG	Updating database with changes to installed add-ons
-1416307391045	addons.xpi-utils	DEBUG	Updating add-on states
-1416307391047	addons.xpi-utils	DEBUG	Writing add-ons list
-1416307395094	DeferredSave.extensions.json	DEBUG	Starting timer
-1416307395139	DeferredSave.extensions.json	DEBUG	Starting write
-1416307395306	addons.manager	DEBUG	shutdown
-1416307395443	addons.xpi	DEBUG	shutdown
-1416307395443	addons.xpi-utils	DEBUG	shutdown
-1416307395574	DeferredSave.extensions.json	DEBUG	Write succeeded
-1416307395574	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
-1416307395574	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307395584	addons.manager	DEBUG	Async provider shutdown done
-1416307397304	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
-1416307397308	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
-1416307397311	addons.xpi	DEBUG	startup
-1416307397312	addons.xpi	INFO	Mapping wrc@avast.com to C:\Program Files\AVAST Software\Avast\WebRep\FF
-1416307397313	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
-1416307397314	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
-1416307397316	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
-1416307397319	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\fxdriver@googlecode.com
-1416307397320	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\admin\AppData\Local\Temp\anonymous27677webdriver-profile\extensions\webdriver-staging
-1416307397320	addons.xpi	DEBUG	checkForChanges
-1416307397588	addons.xpi	DEBUG	No changes found
-*** Blocklist::_preloadBlocklistFile: blocklist is disabled
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
-1416307419620	addons.manager	DEBUG	shutdown
-1416307419626	addons.xpi	DEBUG	shutdown
-1416307419627	addons.xpi	DEBUG	Notifying XPI shutdown observers
-1416307419684	addons.manager	DEBUG	Async provider shutdown done
-
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
-	... 31 more
 </pre></div></td>
-<td>82</td>
-<td>Browser.Browser.ScreenTest@18ee9d6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Browser.Browser.ScreenTest.f()'><b>f</b><br>Test class: Browser.Browser.ScreenTest<br>Parameters: chrome</td>
-<td></td>
-<td>34</td>
-<td>Browser.Browser.ScreenTest@18ee9d6</td></tr>
+<td>66</td>
+<td>CheckBox@15ee671</td></tr>
 </table><p>
 </body>
 </html>

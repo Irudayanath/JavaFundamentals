@@ -17,8 +17,8 @@ public static void main(String args[])
 	while(!s1.isEmpty())
 	{
 		char ch=(Character) s1.pop();
-		
-		System.out.print(ch);
+		String str=Character.toString(ch);
+		System.out.print(str);
 	}
 }
 }

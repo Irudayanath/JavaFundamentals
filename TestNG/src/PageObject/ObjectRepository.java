@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeTest;
 
 public class ObjectRepository {
 	WebDriver driver;
-	WebElement username;
+	WebElement username,password;	
 @BeforeTest
 public void Test()
 {
@@ -23,11 +23,28 @@ public void getUsername(String username1)
     username=driver.findElement(By.xpath("//input[@name='q']"));
 	username.sendKeys(username1);
 }
+
+public void setPassword(String enterpassword)
+{
+	password=driver.findElement(By.xpath(""));
+	password.sendKeys(enterpassword);
+}
+
+public String returnTitle()
+{
+	String title=driver.getTitle();
+	return title;
+	
+}
 public void getPassword(String password)
 {
 	WebElement password1=driver.findElement(By.xpath(""));
 	password1.sendKeys(password);
 
+}
+public String getTitle()
+{
+	return driver.getTitle();
 }
 
 public void setEmpName(String empname)

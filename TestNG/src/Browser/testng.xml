@@ -3,15 +3,22 @@
 <suite thread-count="2" name="Suite" parallel="tests">
   <test name="CrossTest">
   <parameter name="Browser" value="Chrome"></parameter>
-  <parameter name="Author"  value="Jesus"></parameter>
-  <parameter name="Author" value="God"></parameter>
+ 
   <classes>
   <class name="Browser.CrossBrowser"></class>
   </classes>
-  
+ 
   
   </test> <!-- CrossTest -->
+<test name="IE">
+<parameter name="Browser" value="IE"></parameter>
+<classes>
+<class name="Browser.crossbrowser"></class>
 
+</classes>
+
+
+</test>
 <test name="FireTest">
   <parameter name="Browser" value="FireFox"></parameter>
 
