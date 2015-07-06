@@ -12,12 +12,13 @@ import org.testng.annotations.Test;
 public class CrossBrowser {
 	WebDriver driver;
   @BeforeTest
-  @Parameters({"browser"})
+  @Parameters("browser")
   public void f(String browser) {
 	  if(browser.equalsIgnoreCase("Chrome"))
 	  {
 		  System.setProperty("webdriver.chrome.driver","C:/Selenium/ChromeDriver.exe");
 		  driver=new ChromeDriver();
+		  driver.get("http://www.google.com");
 	  }
 	  else if(browser.equalsIgnoreCase("FireFox"))
 	  {
@@ -27,69 +28,21 @@ public class CrossBrowser {
 	  
 	  
   }
-
-@Parameters("browser")
-public void browser(String browser)
+@Test(groups={"Regression,Suite"})
+public void Login()
 {
-	if(browser.equalsIgnoreCase("chrome"))
+	System.out.println("Grips");
 }
 
-@Test(dataProvider="search")
-public void Test1(String name,String age)
-{
-	
-}
-
-@DataProvider(name="parmetername")
-public Object[][] dp()
+@DataProvider(name="Login")
+public Object[][] dp1()
 {
 	return new Object[][]
 			{
-			{"chr","gtt"},
-			{"ght","ggth"}
-			};
-}
-@Test(dataProvider="Search")
-
-public void Test(String name,String Age)
-{
-	
-}
-
-@DataProvider(name="Search")
-public Object[][] getDataFromDataProvider()
-
-{
-	
-	return new Object[][]
-			{
-	  {"Chr","wel"},
-	  {"wel","joe"}
-	  
-};
-}
-@DataProvider(name="Paramer")
-public Object[][] getDatafromDataProvider()
-{
-	return new Object[][]
-			{
-			{
-				"cjjr","ckdjk"
-			},
-			{
-			"cdf","dffgfr"	
-			}
+			{"cgr","wef"},
+			
 			
 			};
-}
-@DataProvider(name="Search")
-public Object[][] searchdp()
-{
-	return new Object[][]
-			{
-			{"gghh","ggh"},
-			{"gtht","gthy"}
-			};
+	
 }
 }
-
