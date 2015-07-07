@@ -22,7 +22,7 @@ for(int i=0;i<a.length;i++)
 }
 System.out.println("LARGEST IN ARRAY \t"   +largest);
 System.out.println("SMALLEST IN ARRAY\t"  +smallest);
-
+System.out.println("God Bless me");
 int acommon;
 int bcommon;
 for(int i=0;i<b.length-1;i++)
