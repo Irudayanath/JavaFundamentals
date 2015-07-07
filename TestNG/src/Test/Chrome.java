@@ -1,32 +1,21 @@
-package Test;
-
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
 
 public class Chrome {
-	WebDriver driver;
-  @Test
-  public void f() {
-	  driver.get("http://www.google.com");
-       WebElement username=driver.findElement(By.xpath("//input[@name='q']"));
-	   username.sendKeys("welcome");
-  }
-  @BeforeTest
-  public void beforeTest() {
-	  System.setProperty("webdriver.ie.driver","c:/selenium/IEDriverServer.exe");
-	  driver=new InternetExplorerDriver();
-	 
-  }
-
-  @AfterTest
-  public void afterTest() {
-	  driver.close();
-  }
+WebDriver driver;
+public void run()
+{
+	System.setProperty("webdriver.chrome.driver","C:/Selenium/chromedriver.exe");
+	driver=new ChromeDriver();
+	driver.get("C:/Selenium/Alert.html");
+	driver.findElement(By.xpath("//button[@onclick='alertFunction()']"));
+	Alert a=driver.switchTo().alert();
+	a.getText();
+	System.out.println(a);
+}
 
 }
