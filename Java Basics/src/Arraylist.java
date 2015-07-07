@@ -13,6 +13,7 @@ public class Arraylist {
 		l.add(4533);
 		l.add(1);
 		System.out.println(l);
+		System.out.println("Arraylist");
 		Iterator it=l.iterator();
 		while(it.hasNext())
 		{
